@@ -20,7 +20,7 @@ jobs:
       - run: docker image build -t upper .
         working-directory: ./upper
       - name: test it
-        run: docker container run upper hello wes
+        run: docker container run upper hello lp
       - uses: docker/login-action@v3
         with:
           registry: ghcr.io
